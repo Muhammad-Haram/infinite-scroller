@@ -20,7 +20,7 @@ function LoadMore() {
     if (inView) {
       fetchAnime(page).then((res) => {
         setData([...data, ...res])
-        page++
+        page = page + 1
       })
     }
 
